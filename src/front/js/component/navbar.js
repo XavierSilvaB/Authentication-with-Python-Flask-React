@@ -6,20 +6,20 @@ export const Navbar = () => {
   const { store, actions } = useContext(Context);
 
   return (
-    <nav className="navbar navbar-light bg-light">
+    <nav className=" barra navbar navbar-light bg-light">
       <div className="container">
         <Link to="/">
-          <span className="navbar-brand mb-0 h1">Kimberling</span>
+          <span className="navbar-brand mb-0 h1">4Geeks Academy</span>
         </Link>
         <div className="ml-auto">
           {"  "}
           {store.token == null ? (
             <>
               <Link to="/login">
-                <button className="btn btn-dark">Login</button>
+                <button className="button-loggin btn btn-secondary">Login</button>
               </Link>{" "}
               <Link to="/signup">
-                <button className="btn btn-dark">Register</button>
+                <button className="button-loggin btn btn-secondary">Register</button>
               </Link>
             </>
           ) : (

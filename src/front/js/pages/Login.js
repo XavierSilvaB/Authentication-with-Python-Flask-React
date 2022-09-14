@@ -41,7 +41,7 @@ export const Login = () => {
     }
   };
   return (
-    <div className="container vh-100">
+    <div className="loggin-container container vh-100">
       <form className="row justify-content-center">
         <div className="col-md-5">
           <>
@@ -50,19 +50,19 @@ export const Login = () => {
               <input
                 type="email"
                 className="form-control mt-1"
-                placeholder="Introduce el correo electrónico"
+                placeholder="correo electrónico"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <small className="text-danger form-text">{emailError}</small>
             </div>
             <div className="form-group mt-3">
-              <label>Clave</label>
+              <label>contraseña</label>
               <div className="input-group">
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Introduce la contraseña"
+                  placeholder="contraseña"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
@@ -72,7 +72,10 @@ export const Login = () => {
               </small>
             </div>
             <div className="d-grid gap-2 mt-3">
-              <button className="btn btn-dark" onClick={handleClick}>
+              <button
+                className="button-loggin btn btn-dark"
+                onClick={handleClick}
+              >
                 Ingresar
               </button>
             </div>
@@ -82,7 +85,7 @@ export const Login = () => {
 
       <hr className="my-4" />
       <Link to="/">
-        <span className="btn btn-dark btn-lg" href="#" role="button">
+        <span className="button-loggin btn btn-dark " href="#" role="button">
           Back home
         </span>
       </Link>
