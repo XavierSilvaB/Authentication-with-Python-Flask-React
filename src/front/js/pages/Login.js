@@ -41,7 +41,7 @@ export const Login = () => {
     }
   };
   return (
-    <div className="loggin-container container vh-100">
+    <div className="loggin-container container ">
       <form className="row justify-content-center">
         <div className="col-md-5">
           <>
@@ -49,7 +49,7 @@ export const Login = () => {
               <label>Correo Electrónico:</label>
               <input
                 type="email"
-                className="form-control mt-1"
+                className="input-loggin form-control mt-1"
                 placeholder="correo electrónico"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -57,11 +57,13 @@ export const Login = () => {
               <small className="text-danger form-text">{emailError}</small>
             </div>
             <div className="form-group mt-3">
-              <label>contraseña</label>
-              <div className="input-group">
+              <label>
+                <bold>contraseña</bold>
+              </label>
+              <div className=" input-loggin input-group">
                 <input
                   type="text"
-                  className="form-control"
+                  className="input-loggin form-control"
                   placeholder="contraseña"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}

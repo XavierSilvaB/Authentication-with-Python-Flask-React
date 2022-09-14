@@ -11,10 +11,22 @@ body {
 
 .loggin-container {
   margin-top: 50px;
-  width: 30%;
+  width: 29%;
   padding-top: 40px;
   background-color: rgb(206, 206, 206);
-  border-radius: 10px;
+  border-radius: 18px;
+  height: 450px;
+}
+
+.loggin-container-x {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 35%;
+  padding: 15px 10px 10px 10px;
+  background-color: rgb(206, 206, 206);
+  border-radius: 18px;
+  height: 420px;
 }
 
 .title-loggin {
@@ -36,4 +48,21 @@ body {
   background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
 }
 
-background-image:linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+.title1 {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.input-b {
+  width: 150px;
+  margin: 1px 5px 2px 5px;
+}
+
+.input-loggin {
+  width: 110%;
+}
+
+.x-int {
+  display: block;
+}

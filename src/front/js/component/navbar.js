@@ -9,17 +9,21 @@ export const Navbar = () => {
     <nav className=" barra navbar navbar-light bg-light">
       <div className="container">
         <Link to="/">
-          <span className="navbar-brand mb-0 h1">4Geeks Academy</span>
+          <span className="title1 ">4Geeks Academy</span>
         </Link>
         <div className="ml-auto">
           {"  "}
           {store.token == null ? (
             <>
               <Link to="/login">
-                <button className="button-loggin btn btn-secondary">Login</button>
+                <button className="button-loggin btn btn-secondary">
+                  Login
+                </button>
               </Link>{" "}
               <Link to="/signup">
-                <button className="button-loggin btn btn-secondary">Register</button>
+                <button className="button-loggin btn btn-secondary">
+                  Register
+                </button>
               </Link>
             </>
           ) : (

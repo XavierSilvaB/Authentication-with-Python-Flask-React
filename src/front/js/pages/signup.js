@@ -49,24 +49,25 @@ export const Signup = () => {
 
   return (
     <div className="container vh-100">
-      <form className="row justify-content-center">
+      <form className=" loggin-container-x ">
         {error ? <div className="alert alert-danger">{error}</div> : null}
         <div className="col-md-5">
           <h3 className="Auth-form-title">Registro</h3>
           <div className="form-group mt-3">
-            <Row className="mb-3">
+            <Row className="x-int mb-3">
               <Form.Group as={Col} sm={6} controlId="formGridEmail">
-                <Form.Label>Email</Form.Label>
+                <Form.Label>Email:</Form.Label>
                 <Form.Control
+                  className="input-b"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   type="email"
-                  placeholder="email@ejemplo.com"
+                  placeholder="email@ejmp.com"
                 />
               </Form.Group>
               <Form.Group as={Col} sm={6} controlId="formGridPassword">
-                <Form.Label>Contraseña</Form.Label>
-                <div className="input-group">
+                <Form.Label>Contraseña:</Form.Label>
+                <div className="input-b input-group">
                   <Form.Control
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
@@ -87,8 +88,11 @@ export const Signup = () => {
             &nbsp;
             <span>Activo</span>
           </div>
-          <div className="d-grid gap-2 mt-3">
-            <button className="btn btn-dark" onClick={handleClick}>
+          <div className=" d-grid gap-2 mt-3">
+            <button
+              className="button-loggin btn btn-dark"
+              onClick={handleClick}
+            >
               Registrarse
             </button>
           </div>
@@ -96,7 +100,11 @@ export const Signup = () => {
       </form>
       <hr className="my-4" />
       <Link to="/">
-        <span className="btn btn-dark btn-lg" href="#" role="button">
+        <span
+          className="button-loggin btn btn-dark btn-lg"
+          href="#"
+          role="button"
+        >
           Back home
         </span>
       </Link>
